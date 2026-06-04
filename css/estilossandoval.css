@@ -1,113 +1,65 @@
 *{
     padding:0;
     margin:0;
+    box-sizing: border-box;
 }
 
+
 body{
-    font-family: "Calibri light";  
+    font-family: "Roboto", sans-serif;
 }
 
 .contenedor{
-    background: rgb(15, 16, 17);
-    width: 80%;
-    margin: auto;
+    width:80%;
+    margin:0 auto;
 }
 
 header{
-    height: 400px;
-    background-image: url("../img/portada.jpeg");
-    background-position: center;
-    background-size: cover;
+    width: 100%;
+    height: 500px;
+    background: url('../img/atardecer.png');
+    background-size: cover; /*Abarca el 100% de la imagen*/
+    background-position: center center;
 }
+/*main{
+    background:red;
+}*/
 
-main{
-    background: white;
-    padding: 20px 30px;
-}
-
-main .foto{
+/***Foto de perfil***/
+main .perfil{
     width: 150px;
     height: 150px;
-    background-color: teal;
+    background: gray;
+    border:8px solid #fff;
     border-radius: 50%;
-    margin: -90px 0 20px 0;
-    border: 6px solid #ffffff;
+   
 
+    margin: -95px auto 10px auto;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
+main .perfil img{
+    width:100%;
+    border-radius: 50%;
 }
 
-/* Contenedor Principal con Grid */
-.contenedor-grid {
-    display: grid;
-    /* Crea exactamente 5 columnas de igual tamaño */
-    grid-template-columns: repeat(5, 1fr); 
-    /* Margen entre las "cajas" (Propiedad Margin del Modelo de Caja) */
-    gap: 15px; 
-    max-width: 1200px;
-    margin: 0 auto; /* Centra la tabla en la pantalla */
+main .texto h2{
+    text-align:center;
+    font-size: 35px;
+    margin:10px 0;
 }
 
-/* Estilo de cada "Caja" de producto */
-.producto {
-    border: 1px solid #ddd;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s;
+main .texto p{
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-align: justify;
 }
-
-.producto:hover {
-    border-color: #999;
-    transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
-}
-
-/* Ajuste de Imágenes */
-.producto img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-/* Información inferior */
-.info {
-    padding: 10px;
-    text-align: left;
-}
-
-.info h3 {
-    font-size: 14px;
-    margin: 5px 0;
-    text-transform: uppercase;
-    color: #555;
-}
-
-.info p {
-    font-size: 13px;
-    font-weight: bold;
-    margin: 0;
-    color: #000;
-}
-
-
-.enlace-invisible {
-    text-decoration: none;
-    color:inherit;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
 
 /****Boton*****/
 
 
 .boton a{
-    background: #d76705;
+    background: rgb(147, 133, 97);
     text-decoration: none; /*quita subrayado*/
     color:white;
     font-size: 18px;
@@ -120,12 +72,12 @@ h1 {
 }
 
 .boton a:hover{
-    background: rgb(138, 90, 6);
+    background: #bdab74;
 }
 
 /******FOOTER******/
 footer{
-    background: #020202;
+    background: #aa6703;
     padding: 30px;
 
 }
@@ -133,17 +85,4 @@ footer{
 footer p{
     color:white;
     text-align: center;
-}
-
-main .foto img{
-    width:100%;
-    border-radius:50%;
-
-}
-
-footer{
-    background: #d76705;
-    text-align: center;
-    padding: 25px;
-    color: #ffffff
 }
